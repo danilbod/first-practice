@@ -1,0 +1,386 @@
+section{
+	margin-top: 100px;
+}
+section:last-of-type{
+	margin-top: 0px;
+}
+.page {
+  min-width: 1100px;
+  /* мы ещё не умеем делать мобильную версию сайта, */
+  /* поэтому выше установлена минимальная ширина страницы */
+  max-width: 1600px;
+  /* выше установили ограничение по максимальной ширине */
+  margin: 0 auto;
+
+  /* выше для экранов больше 1600px отцентрировали весь контент */
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+ 
+}
+
+.header {
+  position: relative;
+
+  display:flex;
+  align-items:center;
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
+  width:100%;
+  background-color:#f2f2f2;
+  /* выше установили ограничения для секции */
+}
+
+/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+.header__square-pic {
+  height: 568px;
+  width: 568px;
+}
+/* и элемента с модификатором вида ключ-значение */
+.table__cell_theme_dark {
+  width: 200px;
+  color: white;
+  margin-right: 0;
+  margin-top: 80px;
+}
+.title {
+	z-index: 1;
+	margin-left:64px;
+	width:730px;
+}
+.logo_place_header{
+  width: 228px;
+  height: 32px;
+  z-index: 2;
+  position: absolute;
+  top:30px;
+  left:64px;
+  background-image: url("../images/logo_place_header.svg");
+}
+.subtitle{
+	width: 388px;
+	height: 100px;
+	z-index: 2;
+
+	position: absolute;
+	bottom:30px;
+    left:64px;  
+}
+.main-illustration{
+	width: 568px;
+	height: 568px;
+
+	position: absolute;
+	top:64px;
+    right:0px;
+	background-color:#2f80ed;
+}
+.square-pic{
+	z-index: 2;
+	width: 765px;
+	height: 608px;
+
+	position: absolute;
+	background-image: url("../images/two_again.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-size:100% 100%;
+	bottom:0px;
+    right:0px;
+}
+.text-color{
+	white-space: normal;
+	color:#000000;
+}
+.title_size{
+	line-height:92px;
+	font-size:102px;
+	font-weight:600;
+}
+.subtitle_size{
+	line-height:25px;
+	font-size:18px;
+	font-weight:normal;
+	text-decoration: none;
+}
+.subtitle_size_link{
+	color:#2f80ed;
+	text-decoration: none;
+}
+.didsription{
+	align-items:center;
+	justify-content: space-between;
+}
+.two-columns{
+	display:flex;
+	width:80%;
+	margin:auto;
+}
+.brief{
+	margin-top:0px;
+
+	width:175px;
+}
+.brief_text{
+	color:#2f80ed;
+	white-space: normal;
+	line-height:1.2;
+	font-size:18px;
+	font-weight:normal;
+}
+.main_text{
+	margin-left:auto;
+	margin-top:0px;
+
+	width:80%;
+	min-width:784px;
+}
+.paragraph{
+
+	margin-top:0px;
+	margin-bottom:30px;
+	color:#000000;
+	white-space: normal;
+	line-height:34px;
+	font-size:24px;
+	font-weight:normal;
+}
+.paragraph:last-of-type{
+	margin-bottom:auto;
+}
+.span-accent{
+	font-weight:600;
+}
+.digits{
+
+	color:#000000;
+}
+.section-title{
+	Width:60%;
+	margin:auto;
+	text-align: center;
+
+	line-height:1.15;
+	font-size:60px;
+	font-weight:600;
+	margin-bottom:20px;
+}
+.section-subtitle{
+	Width:60%;
+	margin:auto;
+	padding-top:0px;
+	text-align: center;
+
+	line-height:34px;
+	font-size:24px;
+	font-weight:normal;
+}
+.table{
+	margin:auto;
+	Width:1100px;
+	display:flex;
+    flex-flow:row wrap;
+	justify-content:space-between;
+	
+}
+.cell{
+	margin-top:60px;
+	width:250px;
+	display:flex;
+	flex-direction:column;
+	gap:20px;
+}
+.heading{
+	margin-top:0px;
+
+	line-height:1.15;
+	font-size:24px;
+	font-weight:600;
+	margin-bottom:0px;
+	
+}
+.text{
+	margin-top:0px;
+	line-height:1.2;
+	font-size:18px;
+	font-weight:normal;
+	margin-bottom:0px;
+}
+.feynman{
+	position:relative;
+	padding-top:100px;
+	width:100%;
+	height:890px;
+	background-color:#f2f2f2;
+	background-image: url("../images/feynman.png");
+	background-size:867px 637px;
+	background-repeat:no-repeat;
+	background-position: left bottom;
+}
+.title_feynman{
+	
+	margin:100px auto 0px;
+	width:648px;
+	text-align:center;
+	line-height:1.15;
+	font-size:120px;
+	font-weight:600;
+}
+.subtitle_feynman{
+
+	width:648px;
+	margin:70px auto;
+	padding-top:0px;
+	text-align:center;
+	line-height:51px;
+	font-size:36px;
+	font-weight:normal;
+}
+.link_feynman{
+	position:absolute;
+	height:445px;
+	top:445px;
+	right:48px;
+	line-height:51px;
+	font-size:36px;
+	font-weight:normal;
+	color:#2f80ed;
+	text-decoration: none;
+}
+.kaufman{
+	position:relative;
+	width:100%;
+	padding-top:90px;
+	padding-bottom:90px;
+	overflow: hidden;
+	background-color:#1f1f1f;
+	
+}
+.kaufman_triangle{
+	position:absolute;
+	z-index:0;
+	top:0px;
+	right:-210px;
+	Width:877px;
+	height:877px;
+	background-image: url("../images/kaufman-triangle.svg");
+	background-size:877px 877px;
+	background-repeat:no-repeat;
+	background-position: left bottom;
+}
+.section-title_k{
+	Width:60%;
+	line-height:1.15;
+	font-size:60px;
+	font-weight:600;
+	position:relative;
+	z-index:1;
+	Width:60%;
+	margin:0px auto 20px;
+	text-align: center;
+}
+.section-subtitle_k{
+	Width:60%;
+	line-height:34px;
+	font-size:24px;
+	font-weight:normal;
+	position: relative;
+	z-index:1;
+	
+	Width:60%;
+	margin:auto;
+	text-align: center;
+}
+
+.theme_dark{
+	color:#ffffff;
+}
+.cell_o{
+	width:200px;
+	margin-top:80px;
+	margin-right: 0;
+	position:relative;
+	z-index:1;
+}
+.footer{
+	position:relative;
+	width:100%;
+	padding-top:60px;
+	padding-bottom:40px;
+	overflow: hidden;
+	background-color:#1f1f1f;
+}
+.column_footer{
+	flex-basis:711px;
+	width:90%;
+	min-height:350px;
+	margin:auto;
+	display:flex;
+	flex-direction:row;
+}
+.copyright{
+	display:flex;
+	justify-content:space-between;
+	flex-direction:column;
+	flex-basis:711px;
+	width:50%;
+	min-height:350px;
+	margin-left:0px;
+}
+.log1o{
+  width: 228px;
+  height: 32px;
+  z-index: 2;
+  margin-top:0px;
+  margin-left:0px;
+  background-image: url("../images/logo_place_footer.svg");
+}
+.author{
+    z-index: 2;
+    margin-bottom:18px;
+  
+  	line-height:25px;
+	font-size:18px;
+	font-weight:normal;
+}
+.info{
+	display:flex;
+	justify-content:flex-end;
+
+	
+	width:50%;
+	min-height:350px;
+	margin-left:0px;
+	gap:20%;
+}
+.footer_info{
+	margin-right:0px;
+}
+.social{
+	height:50px;
+}
+.Column-social{
+	display:flex;
+	flex-direction:column;
+}
+.Column-heading{
+	line-height:30px;
+	font-size:18px;
+	font-weight:600;
+	margin-bottom:20px;
+	margin-top:0px;
+}
+.Column-links{
+	line-height:30px;
+	font-size:18px;
+	font-weight:normal;
+	margin-bottom:5px;
+	margin-top:0px;
+}
+}
+.theme_links{
+	color:#000000;
+}
+.Social-Icon_YT{
+	Width:16px;
+	height:16px;
+}
